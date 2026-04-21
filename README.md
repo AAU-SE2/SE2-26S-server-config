@@ -1,6 +1,6 @@
-# SE2-26S-server-config
+# SE2-26S server config
 
-Central deployment config for the SE2 course server (`se2-demo.aau.at`).
+Central deployment config for the SE2 course server.
 [doco-cd](https://doco.cd) polls this repo and deploys each group's server automatically.
 
 ## How it works
@@ -28,4 +28,3 @@ compose_files:
 
 - **Do not edit `.doco-cd.yml` directly** — it is auto-generated and your changes will be overwritten.
 - The `name` field must be **lowercase** and contain only letters, numbers, hyphens, and underscores.
-- Your server repo must contain a `production.docker-compose.yaml` in its root directory on the `main` branch.
