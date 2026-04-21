@@ -1,4 +1,4 @@
-name: weltreise
+name: grp1-weltreise-server
 repository_url: https://github.com/weltreise-dora-the-explorer/Weltreise_Server.git
 reference: main
 compose_files:
