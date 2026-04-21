@@ -4,11 +4,18 @@ on:
   push:
     branches: [main]
     paths:
-      - 'groups/**.yml'
+      - "groups/**.yml"
+
+concurrency:
+  group: merge-doco-cd
+  cancel-in-progress: false
 
 jobs:
   merge:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
     steps:
       - uses: actions/checkout@v4
 
@@ -17,7 +24,7 @@ jobs:
           output=".doco-cd.yml"
           > "$output"
           first=true
-          for f in $(ls groups/*.yml | sort); do
+          for f in groups/*.yml; do
             if [ "$first" = true ]; then
               first=false
             else
@@ -30,10 +37,7 @@ jobs:
           cat "$output"
 
       - name: Commit merged config
-        run: |
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add .doco-cd.yml
-          git diff --staged --quiet && echo "No changes" && exit 0
-          git commit -m "chore: regenerate .doco-cd.yml from groups/"
-          git push
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "chore: regenerate .doco-cd.yml from groups/"
+          file_pattern: .doco-cd.yml
