@@ -1,32 +1,37 @@
-name: grp1-weltreise-server
+# yaml-language-server: $schema=../.github/schemas/group.schema.json
+name: grp-1-weltreise-server
 repository_url: https://github.com/weltreise-dora-the-explorer/Weltreise_Server.git
 reference: main
 compose_files:
   - production.docker-compose.yaml
 
 ---
-name: scotlandyard
+# yaml-language-server: $schema=../.github/schemas/group.schema.json
+name: grp-2-scotlandyard
 repository_url: https://github.com/SE2-S26-Gruppe2-ScotlandYard/ScotlandYard-Server.git
 reference: main
 compose_files:
   - production.docker-compose.yaml
 
 ---
-name: saboteur
+# yaml-language-server: $schema=../.github/schemas/group.schema.json
+name: grp-3-saboteur
 repository_url: https://github.com/SE2Gruppe3/Saboteur.git
 reference: main
 compose_files:
   - production.docker-compose.yaml
 
 ---
-name: monopoly
+# yaml-language-server: $schema=../.github/schemas/group.schema.json
+name: grp-4-monopoly
 repository_url: https://github.com/AAU-SE2-Monopoly/aau-se2-backend.git
 reference: main
 compose_files:
   - production.docker-compose.yaml
 
 ---
-name: skyjo
+# yaml-language-server: $schema=../.github/schemas/group.schema.json
+name: grp-5-skyjo
 repository_url: https://github.com/aause2gruppe5/skyjo_aau26_se2_backend.git
 reference: main
 compose_files:
