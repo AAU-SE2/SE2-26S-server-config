@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://raw.githubusercontent.com/AAU-SE2/SE2-26S-server-config/main/.github/schemas/group.schema.json",
+  "title": "Group deployment config",
+  "description": "doco-cd deployment configuration for a student group",
+  "type": "object",
+  "required": ["name", "repository_url"],
+  "properties": {
+    "name": {
+      "type": "string",
+      "pattern": "^grp-[0-9]+",
+      "description": "Deployment name — must start with grp-{number}, e.g. grp-1 or grp-1-myapp"
+    },
+    "repository_url": {
+      "type": "string",
+      "pattern": "^https://.+\\.git$",
+      "description": "HTTPS URL of the repository (must end with .git)"
+    },
+    "reference": {
+      "type": "string",
+      "description": "Git branch, tag, or commit SHA to deploy"
+    },
+    "compose_files": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "description": "Docker Compose file(s) to deploy"
+    }
+  }
+}

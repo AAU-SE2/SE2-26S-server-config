@@ -1,0 +1,22 @@
+name: Validate group configs
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - "groups/**.yml"
+      - ".github/schemas/group.schema.json"
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Install check-jsonschema
+        run: pip install check-jsonschema
+
+      - name: Validate group configs against schema
+        run: check-jsonschema --schemafile .github/schemas/group.schema.json groups/*.yml

@@ -1,4 +1,5 @@
-name: scotlandyard
+# yaml-language-server: $schema=../.github/schemas/group.schema.json
+name: grp-2-scotlandyard
 repository_url: https://github.com/SE2-S26-Gruppe2-ScotlandYard/ScotlandYard-Server.git
 reference: main
 compose_files:
