@@ -1,0 +1,6 @@
+# Test deployment
+name: grp-0-se2-server-example
+repository_url: https://github.com/AAU-SE2/se2-server-example.git
+reference: main
+compose_files:
+  - production.docker-compose.yaml
