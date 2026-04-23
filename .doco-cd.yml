@@ -44,4 +44,3 @@ repository_url: https://github.com/aause2gruppe5/skyjo_aau26_se2_backend.git
 reference: main
 compose_files:
   - production.docker-compose.yaml
-

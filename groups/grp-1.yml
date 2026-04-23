@@ -1,6 +1,0 @@
-# yaml-language-server: $schema=../.github/schemas/group.schema.json
-name: grp-1-weltreise-server
-repository_url: https://github.com/weltreise-dora-the-explorer/Weltreise_Server.git
-reference: main
-compose_files:
-  - production.docker-compose.yaml

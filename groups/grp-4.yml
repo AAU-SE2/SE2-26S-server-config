@@ -1,6 +1,0 @@
-# yaml-language-server: $schema=../.github/schemas/group.schema.json
-name: grp-4-monopoly
-repository_url: https://github.com/AAU-SE2-Monopoly/aau-se2-backend.git
-reference: main
-compose_files:
-  - production.docker-compose.yaml

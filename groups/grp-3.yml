@@ -1,6 +1,0 @@
-# yaml-language-server: $schema=../.github/schemas/group.schema.json
-name: grp-3-saboteur
-repository_url: https://github.com/SE2Gruppe3/Saboteur.git
-reference: main
-compose_files:
-  - production.docker-compose.yaml
