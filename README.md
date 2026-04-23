@@ -21,6 +21,8 @@ compose_files:
   - production.docker-compose.yaml
 ```
 
+For all the possible configuration values, see the [doco-cd docs](https://doco.cd/v0.82/Deploy-Settings/#available-settings).
+
 2. Open a Pull Request against `main`.
 3. Once merged, the Action regenerates `.doco-cd.yml` and deployment starts within ~3 minutes.
 
