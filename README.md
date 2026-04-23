@@ -19,7 +19,10 @@ repository_url: https://github.com/your-org/your-server-repo.git
 reference: main
 compose_files:
   - production.docker-compose.yaml
+force_image_pull: true   # always pull the latest image on every deploy
 ```
+
+Your `production.docker-compose.yaml` should use a pre-built image (e.g. from `ghcr.io`) rather than a `build:` instruction - we want to keep deployment fast and simple. You can set up GitHub Actions in your server repo to build and push the image on every push to `main`.
 
 For all the possible configuration values, see the [doco-cd docs](https://doco.cd/v0.82/Deploy-Settings/#available-settings).
 
