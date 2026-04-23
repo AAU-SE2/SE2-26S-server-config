@@ -14,7 +14,7 @@ Central deployment config for the SE2 course server.
 1. Create a file `groups/grp-N.yml` with the following content:
 
 ```yaml
-name: your-group-name       # lowercase, no spaces
+name: grp-1-your-game-server       # lowercase, no spaces
 repository_url: https://github.com/your-org/your-server-repo.git
 reference: main
 compose_files:
