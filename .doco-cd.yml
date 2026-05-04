@@ -6,6 +6,14 @@ compose_files:
   - production.docker-compose.yaml
 
 ---
+name: grp-3-saboteur
+repository_url: https://github.com/SE2Gruppe3/Saboteur.git
+reference: main
+compose_files:
+  - docker-compose.yaml
+force_image_pull: true
+
+---
 name: grp-4-monopoly-klagenfurt
 repository_url: https://github.com/AAU-SE2-Monopoly/aau-se2-backend.git
 reference: main
