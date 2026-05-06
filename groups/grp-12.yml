@@ -1,4 +1,4 @@
-name: grp-12-Alpha        # lowercase, keine Leerzeichen
+name: grp-12-alpha        # lowercase, keine Leerzeichen
 repository_url: https://github.com/HexaBrawl/server.git
 reference: main
 compose_files:
