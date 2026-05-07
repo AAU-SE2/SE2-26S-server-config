@@ -1,0 +1,6 @@
+name: grp-7-cluedo
+repository_url: https://github.com/SE2-Cluedo-2026/Server.git
+reference: main
+compose_files:
+  - production.docker-compose.yaml
+force_image_pull: true
