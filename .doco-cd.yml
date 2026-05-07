@@ -6,6 +6,14 @@ compose_files:
   - production.docker-compose.yaml
 
 ---
+name: grp-12-alpha        # lowercase, keine Leerzeichen
+repository_url: https://github.com/HexaBrawl/server.git
+reference: main
+compose_files:
+  - docker-compose.yml
+force_image_pull: true 
+
+---
 name: grp-3-saboteur
 repository_url: https://github.com/SE2Gruppe3/Saboteur.git
 reference: main
@@ -19,4 +27,12 @@ repository_url: https://github.com/AAU-SE2-Monopoly/aau-se2-backend.git
 reference: main
 compose_files:
   - production.docker-compose.yaml
+
+---
+name: grp-7-cluedo
+repository_url: https://github.com/SE2-Cluedo-2026/Server.git
+reference: main
+compose_files:
+  - production.docker-compose.yaml
+force_image_pull: true
 
