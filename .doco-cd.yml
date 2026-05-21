@@ -43,3 +43,10 @@ compose_files:
   - production.docker-compose.yaml
 force_image_pull: true
 
+---
+name: grp-9-codenames
+repository_url: https://github.com/SS26-SE2-Codenames/Backend.git
+reference: main
+compose_files:
+  - docker-compose.yml
+
