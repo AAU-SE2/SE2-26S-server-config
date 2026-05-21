@@ -1,0 +1,6 @@
+name: grp-13-doomhamsters
+repository_url: https://github.com/SE2-DoomHamsters/server.git
+reference: main
+compose_files: 
+  - docker-compose.yml
+force_image_pull: true
